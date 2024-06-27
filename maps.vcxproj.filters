@@ -20,6 +20,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="maps.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

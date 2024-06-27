@@ -4,6 +4,7 @@
 using namespace std;
 
 void displayMenu() {
+    cout << "--------------------------------------------------------------------------------" << endl;
     cout << "You are in Map Shop! Create your maps and take them whenever you are ready!" << endl;
     cout << "1. Add Political Map" << endl;
     cout << "2. Add Physical Map" << endl;
