@@ -85,6 +85,27 @@ public:
     }
 };
 
+class DemographicMap : public Map {
+private:
+    string demographics;
+
+public:
+    DemographicMap(const string& name, double scale, const string& demographics)
+        : Map(name, scale), demographics(demographics) {}
+
+    void displayInfo() const override {
+        cout << "Demographic Map: " << name << ", Scale: 1:" << scale
+            << ", Demographics: " << demographics << endl;
+    }
+
+    void modifyData() override {
+        cout << "Enter new demographics: ";
+        cin >> demographics;
+        cout << "Enter new scale: ";
+        cin >> scale;
+    }
+};
+
 class Shop {
 private:
     vector<Map*> maps;
